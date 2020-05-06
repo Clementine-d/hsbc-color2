@@ -12,6 +12,7 @@ let t3 = 'Thrive';
 
 function setup() {
   createCanvas(600, 400);
+  cursor('assets/cursor-people.png');
 }
 
 
@@ -20,6 +21,7 @@ function draw() {
   if (mouseX <= 200) {
   background(215, 216, 214);
   fill(0);
+    textFont(myFont);
     textSize(60);
   text(t, 40, 165, 600, 400);
   }
@@ -27,6 +29,7 @@ function draw() {
    if (mouseX >= 200) {
   background(0);
   fill(255);
+     textFont(myFont);
      textSize(60);
   text(t2, 280, 165, 600, 400);
   }
@@ -34,6 +37,7 @@ function draw() {
    if (mouseX >= 400) {
   background(219, 0, 17);
   fill(255);
+     textFont(myFont);
      textSize(60);
   text(t3, 390, 165, 600, 400);
   }
